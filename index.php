@@ -13,14 +13,12 @@
 
 <?php
 
-$login = $_SESSION["Login"];
-
-if(!empty($_SESSION["Login"])){
-echo "<h1>Bienvenue $login</h1>";
-}
-else{
-    echo "";
-}
+if(isset($_SESSION['Login'])){
+    echo '<h1>Bienvenue ' . $_SESSION['Login'] . '</h1>';
+    }
+    else{
+        echo "";
+    }
 
 
 ?>
